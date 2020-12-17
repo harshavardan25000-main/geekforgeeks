@@ -6,6 +6,8 @@ def reverse(arr,start,end):
         arr[start],arr[end]=arr[end],arr[start]
         start,end=start+1,end-1
 def rotation(arr,d,l):
+    if d==0:
+        return 
     reverse(arr,0,d-1)
     reverse(arr,d,l-1)
     reverse(arr,0,l-1)
